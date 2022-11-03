@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-color: #15202b;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  scroll-behavior: auto;
+  min-height: 100vh;
+  color: white
 }
 
 .App-logo {
@@ -28,11 +35,110 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-position: 100% 50%;
   }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.connectWallet{
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  cursor:pointer;
+  border-radius: 50px;  
+}
+
+.zodiacSign{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.mintButtun{
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  font-size: 18px;
+  background-size: 200% 200%;
+  background-image: radial-gradient(
+    circle at 35.41% 90.07%,
+    #0078e0 0, 
+    #0075e8 6.25%,
+    #0072ee 12.5%, 
+    #006df1 18.75%, 
+    #0068f1 25%, 
+    #0061ee 31.25%, 
+    #0058e8 37.5%, 
+    #3a4edf 43.75%, 
+    #6a42d4 50%, 
+    #8833c7 56.25%, 
+    #9f1db7 62.5%, 
+    #b100a7 68.75%, 
+    #bf0095 75%, 
+    #c90082 81.25%, 
+    #d00070 87.5%, 
+    #d4005d 93.75%, 
+    #d5004a 100%
+  );
+  animation: gradient-animation 4s ease infinite;
+  margin: 20px 10px;
+  border-radius: 20px;
+  padding: 0px 2rem;
+  cursor:pointer;
+}
+
+.accountstyle{
+  color:burlywood;
+  font-size: 1em;
+  position: relative;
+  font-style: oblique;
+}
+
+input{
+  border: 0;
+  border-radius: 12px;
+  background-color: gray;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+  width: 150px;
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  text-align: center;
 }
